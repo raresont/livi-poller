@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.rares.poller.TestMainVerticle" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-02-02T22:46:36" hostname="DESKTOP-OIGBS7C" time="32.219">
+  <properties/>
+  <testcase name="test_service_live(Vertx, VertxTestContext)" classname="com.rares.poller.TestMainVerticle" time="32.219">
+    <failure message="java.util.concurrent.TimeoutException: The test execution timed out. Make sure your asynchronous code includes calls to either VertxTestContext#completeNow(), VertxTestContext#failNow() or Checkpoint#flag()&#10;&#10;Unsatisfied checkpoints diagnostics:&#10;" type="java.util.concurrent.TimeoutException">java.util.concurrent.TimeoutException: The test execution timed out. Make sure your asynchronous code includes calls to either VertxTestContext#completeNow(), VertxTestContext#failNow() or Checkpoint#flag()
+
+Unsatisfied checkpoints diagnostics:
+
+	at io.vertx.junit5.VertxExtension.joinActiveTestContexts(VertxExtension.java:205)
+	at io.vertx.junit5.VertxExtension.afterTestExecution(VertxExtension.java:164)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAfterTestExecutionCallbacks$9(TestMethodTestDescriptor.java:233)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$13(TestMethodTestDescriptor.java:273)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeAllAfterMethodsOrCallbacks$14(TestMethodTestDescriptor.java:273)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAllAfterMethodsOrCallbacks(TestMethodTestDescriptor.java:272)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeAfterTestExecutionCallbacks(TestMethodTestDescriptor.java:232)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[00:47:09.105 [vert.x-eventloop-thread-0] ERROR io.vertx.core.impl.ContextImpl - Unhandled exception
+java.lang.IllegalStateException: Client is closed
+	at io.vertx.core.net.impl.NetClientImpl.checkClosed(NetClientImpl.java:186) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:87) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:145) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Remove$1.run(SimpleConnectionPool.java:416) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.lambda$connect$2(SimpleConnectionPool.java:254) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$connect$2(SharedClientHttpStreamEndpoint.java:104) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition$1.onFailure(Composition.java:66) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FailedFuture.addListener(FailedFuture.java:98) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition.onFailure(Composition.java:55) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:22) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.failed(NetClientImpl.java:294) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.lambda$connectInternal$4(NetClientImpl.java:262) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.vertx.core.net.impl.ChannelProvider.lambda$handleConnect$0(ChannelProvider.java:159) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.AbstractNioChannel.doClose(AbstractNioChannel.java:502) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doClose(NioSocketChannel.java:342) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.closeAll(NioEventLoop.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:529) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+00:47:09.119 [vert.x-eventloop-thread-0] ERROR io.vertx.core.impl.ContextImpl - Unhandled exception
+java.lang.IllegalStateException: Client is closed
+	at io.vertx.core.net.impl.NetClientImpl.checkClosed(NetClientImpl.java:186) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:87) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:145) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Remove$1.run(SimpleConnectionPool.java:416) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.lambda$connect$2(SimpleConnectionPool.java:254) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$connect$2(SharedClientHttpStreamEndpoint.java:104) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition$1.onFailure(Composition.java:66) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FailedFuture.addListener(FailedFuture.java:98) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition.onFailure(Composition.java:55) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:22) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.failed(NetClientImpl.java:294) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.lambda$connectInternal$4(NetClientImpl.java:262) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.vertx.core.net.impl.ChannelProvider.lambda$handleConnect$0(ChannelProvider.java:159) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.AbstractNioChannel.doClose(AbstractNioChannel.java:502) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doClose(NioSocketChannel.java:342) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.closeAll(NioEventLoop.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:529) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+00:47:09.124 [vert.x-eventloop-thread-0] ERROR io.vertx.core.impl.ContextImpl - Unhandled exception
+java.lang.IllegalStateException: Client is closed
+	at io.vertx.core.net.impl.NetClientImpl.checkClosed(NetClientImpl.java:186) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:87) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:145) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Remove$1.run(SimpleConnectionPool.java:416) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.lambda$connect$2(SimpleConnectionPool.java:254) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$connect$2(SharedClientHttpStreamEndpoint.java:104) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition$1.onFailure(Composition.java:66) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FailedFuture.addListener(FailedFuture.java:98) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition.onFailure(Composition.java:55) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:22) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.failed(NetClientImpl.java:294) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.lambda$connectInternal$4(NetClientImpl.java:262) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.vertx.core.net.impl.ChannelProvider.lambda$handleConnect$0(ChannelProvider.java:159) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.AbstractNioChannel.doClose(AbstractNioChannel.java:502) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doClose(NioSocketChannel.java:342) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.closeAll(NioEventLoop.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:529) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+00:47:09.134 [vert.x-eventloop-thread-0] ERROR io.vertx.core.impl.ContextImpl - Unhandled exception
+java.lang.IllegalStateException: Client is closed
+	at io.vertx.core.net.impl.NetClientImpl.checkClosed(NetClientImpl.java:186) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:87) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:145) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Remove$1.run(SimpleConnectionPool.java:416) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.lambda$connect$2(SimpleConnectionPool.java:254) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$connect$2(SharedClientHttpStreamEndpoint.java:104) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition$1.onFailure(Composition.java:66) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FailedFuture.addListener(FailedFuture.java:98) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition.onFailure(Composition.java:55) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:22) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.failed(NetClientImpl.java:294) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.lambda$connectInternal$4(NetClientImpl.java:262) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.vertx.core.net.impl.ChannelProvider.lambda$handleConnect$0(ChannelProvider.java:159) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.AbstractNioChannel.doClose(AbstractNioChannel.java:502) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doClose(NioSocketChannel.java:342) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.closeAll(NioEventLoop.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:529) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+00:47:09.137 [vert.x-eventloop-thread-0] ERROR io.vertx.core.impl.ContextImpl - Unhandled exception
+java.lang.IllegalStateException: Client is closed
+	at io.vertx.core.net.impl.NetClientImpl.checkClosed(NetClientImpl.java:186) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.connectInternal(NetClientImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.connect(HttpChannelConnector.java:87) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.HttpChannelConnector.httpConnect(HttpChannelConnector.java:145) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.connect(SharedClientHttpStreamEndpoint.java:82) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.connect(SimpleConnectionPool.java:249) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool$Remove$1.run(SimpleConnectionPool.java:416) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.CombinerExecutor.submit(CombinerExecutor.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.execute(SimpleConnectionPool.java:240) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.pool.SimpleConnectionPool.lambda$connect$2(SimpleConnectionPool.java:254) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.http.impl.SharedClientHttpStreamEndpoint.lambda$connect$2(SharedClientHttpStreamEndpoint.java:104) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl$3.onFailure(FutureImpl.java:153) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition$1.onFailure(Composition.java:66) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FailedFuture.addListener(FailedFuture.java:98) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.Composition.onFailure(Composition.java:55) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureBase.emitFailure(FutureBase.java:75) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.FutureImpl.tryFail(FutureImpl.java:230) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.future.PromiseImpl.tryFail(PromiseImpl.java:23) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:50) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.ContextImpl.emit(ContextImpl.java:274) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.impl.EventLoopContext.emit(EventLoopContext.java:22) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.failed(NetClientImpl.java:294) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.vertx.core.net.impl.NetClientImpl.lambda$connectInternal$4(NetClientImpl.java:262) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure(DefaultPromise.java:109) ~[netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.vertx.core.net.impl.ChannelProvider.lambda$handleConnect$0(ChannelProvider.java:159) ~[vertx-core-4.2.3.jar:4.2.3]
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.AbstractNioChannel.doClose(AbstractNioChannel.java:502) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doClose(NioSocketChannel.java:342) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.doClose0(AbstractChannel.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:749) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.close(AbstractChannel.java:620) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.closeAll(NioEventLoop.java:772) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:529) [netty-transport-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.72.Final.jar:4.1.72.Final]
+	at java.lang.Thread.run(Thread.java:834) [?:?]
+]]></system-out>
+  <system-err><![CDATA[Feb 03, 2022 12:46:38 AM com.rares.poller.repository.ServiceRepository <init>
+INFO: Initialiazing  the ServiceRepository
+Feb 03, 2022 12:46:38 AM com.rares.poller.repository.MySQLClientProvider <init>
+INFO: Setting the MySQL client
+Feb 03, 2022 12:46:38 AM com.rares.poller.repository.MySQLClientProvider prepareServiceTable
+INFO: Being sure that we have a Service table
+Feb 03, 2022 12:46:38 AM com.rares.poller.repository.ServiceRepository getServices
+INFO: Updating the memory loaded services
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Building the router
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Setting the static content
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Setting the API router
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Setting the API GET path
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Setting the API POST path
+Feb 03, 2022 12:46:38 AM com.rares.poller.PollerRouter <init>
+INFO: Setting the API DELETE path
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$2
+INFO: Got a connection from the pool
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$2
+INFO: Got a connection from the pool
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.ServiceRepository getServices
+INFO: Updating the memory loaded services
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$3
+INFO: Query executed with success.
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$3
+INFO: Query executed with success.
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$2
+INFO: Got a connection from the pool
+Feb 03, 2022 12:46:39 AM com.rares.poller.repository.MySQLClientProvider lambda$executeQuery$3
+INFO: Query executed with success.
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:41 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:44 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:47 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:50 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:53 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:56 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:46:59 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:47:02 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:47:05 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:47:05 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:47:07 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:07 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:07 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:07 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:07 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked Connection timed out: no further information: kry.health/76.76.21.21:443
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository updateStatuses
+INFO: Trying to update all statuses
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11121
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares11
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares1112
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares111211
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for Rares22
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa1
+Feb 03, 2022 12:47:08 AM com.rares.poller.repository.ServiceRepository lambda$updateStatuses$2
+INFO: Getting status for dasdsa3
+Feb 03, 2022 12:47:09 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked null
+Feb 03, 2022 12:47:09 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked null
+Feb 03, 2022 12:47:09 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked null
+Feb 03, 2022 12:47:09 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked null
+Feb 03, 2022 12:47:09 AM com.rares.poller.ExternalCaller lambda$get_url_status$0
+INFO: Calling URL did not worked null
+]]></system-err>
+</testsuite>
