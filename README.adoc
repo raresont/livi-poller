@@ -28,7 +28,7 @@ So for this I used Bootstrap and JQuery to have something simple, easy to compla
 
 ######BTW, if you want to run it. I began the project in Visual Studio and Continued in IntelliJ. Mostly run from the console in order to have that quick re-deploy
 ```
-./gradlew clean test
+./gradlew clean run
 ```
 I spent too much thinking, rethinking, thinking about overthinking to not overthink to be sure that I want to use this technology in the future.
 
